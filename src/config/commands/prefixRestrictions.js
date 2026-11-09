@@ -1,6 +1,3 @@
-/**
- * Prefix command restrictions — dashboard and advanced setup flows stay slash-only.
- */
 
 /** Top-level commands that cannot be invoked via prefix at all. */
 export const SLASH_ONLY_COMMANDS = new Set([
