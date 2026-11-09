@@ -4,11 +4,7 @@
 
 /** Top-level commands that cannot be invoked via prefix at all. */
 export const SLASH_ONLY_COMMANDS = new Set([
-  'configwizard',
-  'help',
-  'embedbuilder',
-  'wipedata',
-  'apply',
+  
 ]);
 
 /** Subcommands blocked for every command when invoked via prefix. */
