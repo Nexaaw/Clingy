@@ -1,6 +1,4 @@
-export const SLASH_ONLY_COMMANDS = new Set([
-  
-]);
+
 
 /** Top-level commands that cannot be invoked via prefix at all. */
 export const SLASH_ONLY_COMMANDS = new Set([
