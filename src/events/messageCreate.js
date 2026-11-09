@@ -46,9 +46,16 @@ export default {
 
 async function handlePrefixCommand(message, client) {
   try {
-    const guildConfig = await getGuildConfig(client, message.guild.id);
-    const prefix = guildConfig?.prefix || getCommandPrefix();
-    const parsed = parsePrefixCommand(message.content, prefix);
+const guildConfig = await getGuildConfig(client, message.guild.id);
+
+const prefix = guildConfig?.prefix || getCommandPrefix();
+
+const isStaff = message.member?.roles?.cache?.has(
+    '1569402242971336784'
+) ?? false;
+
+const parsed = parsePrefixCommand(message.content, prefix) ||
+    (isStaff ? parsePrefixCommand(message.content, '') : null);
     
     if (!parsed) {
       return; 
