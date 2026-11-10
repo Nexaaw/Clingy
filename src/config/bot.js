@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Listening",     // this is what people actually see
+        state: "Working on Clingy",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -187,10 +187,10 @@ export const botConfig = {
 
     // Command cooldowns (milliseconds).
     cooldowns: {
-      daily: 24 * 60 * 60 * 1000,
-      work: 60 * 60 * 1000,
-      crime: 2 * 60 * 60 * 1000,
-      rob: 4 * 60 * 60 * 1000,
+      daily: 0 * 0 * 20 * 1000,
+      work: 0 * 20 * 1000,
+      crime: 0 * 0 * 20 * 1000,
+      rob: 0 * 0 * 20 * 1000,
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
